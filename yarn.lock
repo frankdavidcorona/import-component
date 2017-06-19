@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@angular/animations@^4.0.0":
+"@angular/animations@^4.2.3":
   version "4.2.3"
   resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@angular/animations/-/animations-4.2.3.tgz#686926a69d0c9c26a9bcad26cd6fbd0245bb6c1b"
   dependencies:
