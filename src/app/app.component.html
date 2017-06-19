@@ -7,8 +7,8 @@
   </h1>
 </div>
 
-<td-file-input color="primary" (select)="selectEvent($event)"
-               accept=".ext,.anotherExt" [disabled]="disabled" multiple>
+<td-file-input [(ngModel)]="files" color="primary" (select)="selectEvent($event)"
+               [disabled]="disabled" multiple>
   <md-icon>attach_file</md-icon>
   <span>Choose a file...</span>
 </td-file-input>
