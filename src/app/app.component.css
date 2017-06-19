@@ -1,1 +1,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
