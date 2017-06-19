@@ -7,18 +7,13 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = '@import Component.';
-  fileSelectMultipleMsg: string;
-  fileUploadMultipleMsg: string;
+  fileSelectMultipleMsg: string = 'No file(s) selected';
+  fileUploadMultipleMsg: string = 'No file(s) uploaded yet.';
   disabled: false;
-
-  constructor() {
-    this.fileSelectMultipleMsg = 'No file(s) selected';
-    this.fileUploadMultipleMsg = 'No file(s) uploaded yet.';
-  }
 
   selectMultipleEvent(files: FileList | File): void {
     if (files instanceof FileList) {
-      let names: string[] = [];
+      const names: string[] = [];
       for (let i: number = 0; i < files.length; i++) {
         names.push(files[i].name);
       }
@@ -30,7 +25,7 @@ export class AppComponent {
 
   uploadMultipleEvent(files: FileList | File): void {
     if (files instanceof FileList) {
-      let names: string[] = [];
+      const names: string[] = [];
       for (let i: number = 0; i < files.length; i++) {
         names.push(files[i].name);
       }
