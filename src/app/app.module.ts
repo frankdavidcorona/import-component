@@ -39,11 +39,11 @@ const ROUTES = [
     PostsComponent
   ],
   imports: [
+    RouterModule.forRoot(ROUTES), // Add routes to the app
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MdIconModule,
-    RouterModule.forRoot(ROUTES), // Add routes to the app
     CovalentDynamicFormsModule,
     CovalentHighlightModule,
     CovalentMarkdownModule,

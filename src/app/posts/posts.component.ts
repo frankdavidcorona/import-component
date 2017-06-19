@@ -4,7 +4,8 @@ import {PostsService} from './service/posts.service';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  styleUrls: ['./posts.component.css'],
+  providers: [PostsService]
 })
 export class PostsComponent implements OnInit {
   posts: any = [];
@@ -14,7 +15,7 @@ export class PostsComponent implements OnInit {
 
   ngOnInit() {
     this.postService.getAllPosts().subscribe(posts => {
-      this.posts = posts
+      this.posts = posts;
     });
   }
 
