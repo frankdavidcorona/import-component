@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '@import Component.';
+  title = '@import from CSV.';
   fileSelectMultipleMsg: string = 'No file(s) selected';
   fileUploadMultipleMsg: string = 'No file(s) uploaded yet.';
   disabled: false;

@@ -5,3 +5,7 @@
   flex-direction: row;
   align-items: center;
 }
+
+.top-margin {
+  margin-top: 15px;
+}
