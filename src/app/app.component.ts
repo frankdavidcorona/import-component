@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '@import Component.';
+
+  files: File | FileList;
+  disabled: false;
+
+  selectEvent(files: FileList | File): void {
+    if (files instanceof FileList) {
+      console.log(files)
+    } else {
+      console.log(files)
+    }
+  };
 }
