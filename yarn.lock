@@ -146,6 +146,32 @@
   dependencies:
     tsickle "^0.21.0"
 
+"@covalent/core@1.0.0-beta.5-1", "@covalent/core@^1.0.0-beta.5-1":
+  version "1.0.0-beta.5-1"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@covalent/core/-/core-1.0.0-beta.5-1.tgz#503d816bcb36bf164a388870ad74ccd240b12846"
+
+"@covalent/dynamic-forms@^1.0.0-beta.5-1":
+  version "1.0.0-beta.5-1"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@covalent/dynamic-forms/-/dynamic-forms-1.0.0-beta.5-1.tgz#3617f32cc734eff6fec99ae363ebd6e159831365"
+  dependencies:
+    "@covalent/core" "1.0.0-beta.5-1"
+
+"@covalent/highlight@^1.0.0-beta.5-1":
+  version "1.0.0-beta.5-1"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@covalent/highlight/-/highlight-1.0.0-beta.5-1.tgz#c4af6d82b6e3aef21806c0fffd09477553b1b552"
+  dependencies:
+    highlight.js "9.11.0"
+
+"@covalent/http@^1.0.0-beta.5-1":
+  version "1.0.0-beta.5-1"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@covalent/http/-/http-1.0.0-beta.5-1.tgz#f3d51a0a33cd1e0ddc9b4db23c724e0c5e9e967c"
+
+"@covalent/markdown@^1.0.0-beta.5-1":
+  version "1.0.0-beta.5-1"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@covalent/markdown/-/markdown-1.0.0-beta.5-1.tgz#67c316d94593c4963961fadc6fd1aeb66f0e25af"
+  dependencies:
+    showdown "1.6.4"
+
 "@ngtools/json-schema@1.1.0":
   version "1.1.0"
   resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
@@ -1999,6 +2025,10 @@ hawk@~3.1.3:
 he@1.1.x:
   version "1.1.1"
   resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
+
+highlight.js@9.11.0:
+  version "9.11.0"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/highlight.js/-/highlight.js-9.11.0.tgz#47f98c7399918700db2caf230ded12cec41a84ae"
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -4241,6 +4271,12 @@ shallow-clone@^0.1.2:
     lazy-cache "^0.2.3"
     mixin-object "^2.0.1"
 
+showdown@1.6.4:
+  version "1.6.4"
+  resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/showdown/-/showdown-1.6.4.tgz#056bbb654ecdb8d8643ae12d6d597893ccaf46c6"
+  dependencies:
+    yargs "^6.6.0"
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -5142,7 +5178,7 @@ yargs-parser@^5.0.0:
   dependencies:
     camelcase "^3.0.0"
 
-yargs@^6.0.0:
+yargs@^6.0.0, yargs@^6.6.0:
   version "6.6.0"
   resolved "http://artifactory.samsystems.cu:80/artifactory/api/npm/npm/yargs/-/yargs-6.6.0.tgz#782ec21ef403345f830a808ca3d513af56065208"
   dependencies:
