@@ -1,0 +1,113 @@
+@import '~@angular/material/theming';
+@import "./theme";
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.pull-right {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+
+cm-layout {
+
+  .md-sidenav-content {
+    height: 100vh;
+  }
+
+  .mat-nav-list.cm-navigator {
+
+    .mat-list-item {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.56) !important;
+    }
+
+    .mat-list-item-content {
+      cursor: pointer;
+
+      &:hover, &.mat-list-item-focus {
+        outline: none;
+        background-color: mat-color($primary, 500) !important;
+        color: mat-color($mat-blue-grey, 800) !important;
+      }
+    }
+  }
+}
+
+mat-input-container {
+  margin-bottom: 10px;
+
+  &.ng-dirty.ng-invalid, &.ng-touched.ng-invalid {
+
+    .mat-placeholder-required, .mat-input-placeholder {
+      color: mat-color($warn) !important;
+    }
+
+    .mat-input-underline {
+      border-color: mat-color($warn) !important;
+
+      .mat-input-ripple {
+        background-color: mat-color($warn) !important;
+      }
+    }
+  }
+}
+
+.global-action {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  color: white;
+  z-index: 100;
+}
+
+[mat-dialog-actions], [mat-dialog-actions], mat-dialog-actions, mat-dialog-actions {
+
+  button {
+    margin-left: 0.5em !important;
+  }
+}
+
+.cm-toolbar {
+  @include mat-elevation(1);
+  z-index: 1;
+
+  .layout-title {
+    display: block;
+    position: relative;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .02em;
+    font-weight: 400;
+    box-sizing: border-box;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+form {
+  padding: 1em;
+
+  input[matInput] {
+    width: 100%;
+  }
+
+  .form-content{
+    padding: 20px;
+  }
+}
