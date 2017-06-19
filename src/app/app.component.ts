@@ -7,15 +7,41 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = '@import Component.';
-
-  files: File | FileList;
+  fileSelectMultipleMsg: string;
+  fileUploadMultipleMsg: string;
   disabled: false;
 
-  selectEvent(files: FileList | File): void {
+  constructor() {
+    this.fileSelectMultipleMsg = 'No file(s) selected';
+    this.fileUploadMultipleMsg = 'No file(s) uploaded yet.';
+  }
+
+  selectMultipleEvent(files: FileList | File): void {
     if (files instanceof FileList) {
-      console.log(files)
+      let names: string[] = [];
+      for (let i: number = 0; i < files.length; i++) {
+        names.push(files[i].name);
+      }
+      this.fileSelectMultipleMsg = names.join(',');
     } else {
-      console.log(files)
+      this.fileSelectMultipleMsg = files.name;
     }
-  };
+  }
+
+  uploadMultipleEvent(files: FileList | File): void {
+    if (files instanceof FileList) {
+      let names: string[] = [];
+      for (let i: number = 0; i < files.length; i++) {
+        names.push(files[i].name);
+      }
+      this.fileUploadMultipleMsg = names.join(',');
+    } else {
+      this.fileUploadMultipleMsg = files.name;
+    }
+  }
+
+  cancelMultipleEvent(): void {
+    this.fileSelectMultipleMsg = 'No file(s) selected yet.';
+    this.fileUploadMultipleMsg = 'No file(s) uploaded yet.';
+  }
 }
