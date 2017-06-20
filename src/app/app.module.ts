@@ -24,7 +24,7 @@ import {CovalentDynamicFormsModule} from '@covalent/dynamic-forms';
 const ROUTES = [
   {
     path: '',
-    redirectTo: 'posts',
+    redirectTo: '/',
     pathMatch: 'full'
   },
   {

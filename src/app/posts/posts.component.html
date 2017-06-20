@@ -1,4 +1,15 @@
 <div class="container">
+  <div class="card card-block" style="padding-bottom: 0">
+    <div class="card-title">
+      <div class="header-container">
+        <h1>
+          <md-icon>view_list</md-icon>&nbsp;Welcome to @list of posts using NodeJS.
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
   <div class="row" *ngFor="let post of posts">
     <div class="card card-block">
       <h4 class="card-title">{{ post.title }}</h4>
