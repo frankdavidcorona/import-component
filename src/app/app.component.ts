@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '@import from CSV.';
+  title = '@import from CSV for CallerMate UI.';
   fileSelectMultipleMsg: string = 'No file(s) selected';
   fileUploadMultipleMsg: string = 'No file(s) uploaded yet.';
   disabled: false;
@@ -21,6 +21,7 @@ export class AppComponent {
     } else {
       this.fileSelectMultipleMsg = files.name;
     }
+    console.log(files);
   }
 
   uploadMultipleEvent(files: FileList | File): void {
@@ -33,6 +34,7 @@ export class AppComponent {
     } else {
       this.fileUploadMultipleMsg = files.name;
     }
+    console.log(files);
   }
 
   cancelMultipleEvent(): void {
